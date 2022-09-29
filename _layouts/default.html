@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}{% if page.url.size > 1 %} - Aizistral's Haven{% endif %}</title>
+		<meta name="description" content="{{ page.description }}" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="/assets/css/styles.css">
+		<link rel="icon" href="/assets/images/aizhead.png" type="image/x-icon">
+
+		{% if page.redirect %}
+		<meta http-equiv="Refresh" content="0; url='{{ page.redirect }}}}'" />
+		{% endif %}
+
+		{% feed_meta %}
+		{% seo %}
+	</head>
+
+	<body>
+		{{ content }}
+	</body>
+
+</html>
