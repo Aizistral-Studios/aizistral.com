@@ -10,7 +10,15 @@ html {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	background-color: #181818;
+	color: white;
+	min-height: 100vh;
+}
+
+:any-link {
 	color: white;
 }
 
@@ -97,7 +105,7 @@ nav {
 	border-right: #181818 solid 2px;
 }
 
-.header-button:hover, .header-button:hover .header-button_text {
+.header-button:hover {
 	background-color: #1d1d1d;
 	color: #FF7C11;
 }
@@ -106,7 +114,49 @@ nav {
 	margin-right: 10px;
 }
 
-:any-link {
+footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: auto;
+	border-top: #101010 solid 1px;
+	background-color: #101010;
+	color: lightgray;
+}
+
+.footer-text {
+	margin: 20px;
+	margin-left: 3.5%;
+	margin-right: 3.5%;
+	line-height: 1.5rem;
+	font-size: 1rem;
+	max-width: 33%;
+}
+
+.footer-right {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.jekyll-logo {
+	max-height: 3rem;
+	transform: translateY(0.75rem);
+}
+
+.jekyll-text {
+	transform: translateY(-0.75rem);
+	white-space: nowrap;
+	margin-right: 100px;
+}
+
+.footer-link {
+	color: lightgray;
+}
+
+.footer-link:hover, .footer-link:active {
 	color: white;
 }
 
