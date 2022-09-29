@@ -27,7 +27,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-	max-width: 65%;
+	max-width: 70%;
 	margin: 20px auto;
 	border-radius: 8px 8px 8px 8px;
 	background-color: #222222;
@@ -38,6 +38,8 @@ main {
 nav {
 	background-color: #222222;
 	display: flex;
+	flex-wrap: nowrap;
+	overflow: auto;
 	box-shadow: 0px 0px 12px 0px #101010;
 }
 
@@ -70,6 +72,7 @@ nav {
 	font-size: 3rem;
 	font-weight: normal;
 	margin-right: 20px;
+	white-space: nowrap;
 }
 
 .header-buttons {
@@ -80,7 +83,7 @@ nav {
 }
 
 .header-button {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	height: 100%;
 	text-decoration: none;
@@ -90,14 +93,47 @@ nav {
 	font-size: 1.25rem;
 }
 
-.header-buttons:last-child {
+.header-button:last-child {
 	border-right: #181818 solid 2px;
 }
 
-.header-button:hover {
+.header-button:hover, .header-button:hover .header-button_text {
 	background-color: #1d1d1d;
+	color: #FF7C11;
+}
+
+.header-button_icon {
+	margin-right: 10px;
 }
 
 :any-link {
 	color: white;
+}
+
+@media screen and (max-width: 1080px) {
+	.header-button_text {
+		display: none;
+	}
+
+	.header-button_icon {
+		margin-right: 0px;
+		transform: scale(1.25);
+	}
+}
+
+@media screen and (max-width: 720px) {
+
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header-buttons {
+		margin-left: 3.5%;
+		border-top: #181818 solid 2px;
+	}
+
+	.header-button_icon {
+		height: 3rem;
+	}
 }
