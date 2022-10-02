@@ -1,0 +1,193 @@
+---
+layout: default
+title: About
+description: Be there soon.
+---
+
+<body>
+	<main>
+		<div>
+			<img src="/assets/images/mcchar.png" alt="Minecraft Character" class="about-char-image">
+			<h1 id="hello" class="about-title">Hello, wanderer!</h1>
+			<p class="larger-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo id libero doloremque beatae ipsa veniam magni accusamus. Voluptatem ullam veniam vero facere molestiae repudiandae iusto recusandae dolorum maxime nulla!</p>
+			<p>Hic adipisci at, quibusdam cumque temporibus enim a debitis facere. Numquam quos asperiores facilis ut ipsam atque quae itaque nulla explicabo quidem enim, quas, accusamus porro id. Eum, ad neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui praesentium atque vel quod perferendis, minus error earum est aliquam alias ipsa ipsum saepe incidunt debitis aperiam velit aliquid distinctio. Iure.</p>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugiat eum tempore numquam deleniti commodi possimus aliquam accusamus reprehenderit iste! Laudantium perspiciatis illum dolore quos maiores quis earum magnam facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nulla tempora dolorum. Libero itaque iusto consequatur non. Tenetur fuga nesciunt repudiandae omnis maiores beatae, laborum rem, recusandae, quos odit veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ex fugit vel libero voluptatibus! Corrupti harum sunt, ex ut natus deleniti voluptate illum mollitia quam enim asperiores impedit delectus repellendus.</p>
+			<h2 id="projects">My biggest projects</h2>
+			<div class="info-card-container">
+				{%
+					include mod_info_card.html
+					logo="/assets/icons/EL_logo.png"
+					name="Enigmatic Legacy"
+					downloads="2,000,000+"
+					desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eaque odio. Doloremque harum enim possimus culpa itaque ipsa temporibus magnam quos consectetur."
+					modrinth="https://modrinth.com/mod/enigmatic-legacy"
+					curse="https://www.curseforge.com/minecraft/mc-mods/enigmatic-legacy"
+					wiki="https://github.com/Aizistral-Studios/Enigmatic-Legacy/wiki"
+					repo="https://github.com/Aizistral-Studios/Enigmatic-Legacy"
+				%}
+				{%
+					include mod_info_card.html
+					logo="/assets/icons/NCR_logo.png"
+					name="No Chat Reports"
+					downloads="1,000,000+"
+					desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eaque odio. Doloremque harum enim possimus culpa itaque ipsa temporibus magnam quos consectetur."
+					modrinth="https://modrinth.com/mod/no-chat-reports"
+					curse="https://www.curseforge.com/minecraft/mc-mods/no-chat-reports"
+					wiki="https://github.com/Aizistral-Studios/No-Chat-Reports/wiki"
+					repo="https://github.com/Aizistral-Studios/No-Chat-Reports"
+				%}
+				{%
+					include framework_info_card.html
+					logo="/assets/icons/forge.png"
+					logo_class="card-forge-logo"
+					name="Forge Workspace Setup"
+					desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eaque odio. Doloremque harum enim possimus culpa itaque ipsa temporibus magnam quos consectetur."
+					docs="https://aizistral.com/"
+					repo="https://github.com/Aizistral-Studios/aizistral.com"
+				%}
+				{%
+					include website_info_card.html
+					logo_class="card-aizhead-logo"
+					logo="/assets/images/aizhead_3dM.png"
+					name="Aizistral's Haven"
+					desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eaque odio. Doloremque harum enim possimus culpa itaque ipsa temporibus magnam quos consectetur."
+					link="https://aizistral.com/"
+					repo="https://github.com/Aizistral-Studios/aizistral.com"
+				%}
+			</div>
+			<p class="centered">...that is not all of course. You can see the rest at GitHub organization I own:&nbsp;
+				{% include inline_button.html
+					url="https://github.com/Aizistral-Studios/"
+					icon="/assets/icons/aizistudios.png"
+					name="Aizistral Studios"
+				%}
+			</p>
+			<h2 id="videos">My YouTube videos</h2>
+			<div class="centered-container">
+				<div class="youtube-thumbnail-container-fullpage">
+					{%
+						include youtube_thumbnail.html
+						link="https://www.youtube.com/watch?v=gH_q7ZuCJs0"
+						image="https://i.ytimg.com/vi/gH_q7ZuCJs0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&amp;rs=AOn4CLCCw6_Ws7sZV0DlSXHO6ADIyRsVwg"
+						duration="6:42"
+						title="Chat Reporting in Minecraft 1.19.2: Gaslight Strikes Back"
+						views="50K+"
+						date="August 11, 2022"
+					%}
+					{%
+						include youtube_thumbnail.html
+						link="https://www.youtube.com/watch?v=DobmW1ZUcbQ"
+						image="https://i.ytimg.com/vi/DobmW1ZUcbQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDChA_uZoYrauKkjZpGhXQdQSgo7A"
+						duration="48:08"
+						title="Chat Reporting in Minecraft 1.19.2: Is Everything Fixed?"
+						views="30K+"
+						date="August 7, 2022"
+					%}
+					{%
+						include youtube_thumbnail.html
+						link="https://www.youtube.com/watch?v=bF_37BrWBSM"
+						image="https://i.ytimg.com/vi/bF_37BrWBSM/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDo5gHoh_p7fzAywpnmkJEtblM9-g"
+						duration="23:37"
+						title="Why defenders of Minecraft's chat reporting are WRONG"
+						views="70K+"
+						date="July 17, 2022"
+					%}
+					{%
+						include youtube_thumbnail.html
+						link="https://www.youtube.com/watch?v=0X_SlIOLliQ"
+						image="https://i.ytimg.com/vi/0X_SlIOLliQ/hqdefault.jpg?	sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBKmAMyMy1jzkLtkrcXIsSoXWfU7w"
+						duration="23:37"
+						title="Minecraft 1.19.84: Is This War?"
+						views="150K+"
+						date="July 6, 2022"
+					%}
+				</div>
+			</div>
+			<p class="centered">...check out my YouTube channel for more:&nbsp;
+				{% include inline_button.html
+					url="https://www.youtube.com/c/Aizistral/"
+					icon="/assets/icons/youtube.png"
+					name="Aizistral"
+				%}
+			</p>
+			<h2 id="platforms">Where I dwell</h2>
+			<p>You can find me on following platforms:</p>
+			<div class="info-card-container">
+				{%
+					include platform_button.html
+					url="https://github.com/Aizistral"
+					svg="/assets/icons/github.svg"
+					name="GitHub (Aizistral)"
+					padding="2px"
+				%}
+				{%
+					include platform_button.html
+					url="https://modrinth.com/user/Aizistral"
+					svg="/assets/icons/modrinth.svg"
+					name="Modrinth (Aizistral)"
+				%}
+				{%
+					include platform_button.html
+					url="https://www.curseforge.com/members/aizistral/projects"
+					svg="/assets/icons/curseforge.svg"
+					name="CurseForge (Aizistral)"
+				%}
+				{%
+					include platform_button.html
+					url="https://www.youtube.com/c/Aizistral"
+					svg="/assets/icons/youtube.svg"
+					name="YouTube (Aizistral)"
+				%}
+				{%
+					include platform_button.html
+					url="https://odysee.com/@aizistral:b"
+					svg="/assets/icons/odysee.svg"
+					name="Odysee (Aizistral)"
+				%}
+				{%
+					include platform_button.html
+					url="https://discord.gg/fuWK8ns"
+					svg="/assets/icons/discord.svg"
+					name="Discord (Aizistral#1024)"
+				%}
+			</div>
+			<h2 id="contact">Contact</h2>
+			<p>There's a two main ways to get in touch with me:</p>
+			<div class="contact-grid">
+				<div class="contact-grid-element">
+					<h5 class="contact-title">My Discord server:</h5>
+					<p class="contact-text">
+						{%
+							include inline_button.html
+							url="https://discord.gg/fuWK8ns"
+							icon="/assets/icons/EL_logo.png"
+							name="The Architect's Domain"
+						%}
+					</p>
+					<p class="contact-text">...for casual chatting and such.</p>
+				</div>
+				<div class="contact-grid-element">
+					<h5 class="contact-title">E-Mail:</h5>
+					<p class="contact-text">
+						{%
+							include inline_button.html
+							url="mailto:admin@aizistral.com"
+							svg="/assets/icons/envelope-fill.svg"
+							name="admin@aizistral.com"
+						%}
+					</p>
+					<p class="contact-text">...for business inquiries.</p>
+				</div>
+			</div>
+			<h2 id="support">Support me</h2>
+			<p>My public works are free, but if you would like to lend me your financial support - I would be very grateful!<br />You can do so at Buy Me a Coffee:&nbsp;
+				{%
+					include inline_button.html
+					url="https://www.buymeacoffee.com/aizistral"
+					icon="/assets/icons/bmc-logo.png"
+					name="Aizistral"
+				%}
+			</p>
+		</div>
+	</main>
+</body>

@@ -1,0 +1,9 @@
+<a target="{% if include.target %}{{ include.target }}{% else %}_blank{% endif %}" class="inline-button" href="{{ include.url }}">
+	{% if include.icon %}
+	<img class="inline-button-icon" src="{{ include.icon }}" alt="Logo" width="28">
+	{% else if include.svg %}
+	<svg class="inline-button-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+		<use href="{{ include.svg }}#main"></use>
+	</svg>
+	{% endif %}
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ include.name }}</a>
