@@ -6,3 +6,7 @@ plugins:
   
 permalink: pretty
 url: https://aizistral.com
+
+collections:
+  publications:
+    output: true

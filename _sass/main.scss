@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+@font-face {
+	font-family: 'BabelStoneFlags';
+	src: url('/assets/fonts/BabelStoneFlags.woff') format('woff'),
+		url('/assets/fonts/BabelStoneFlags.woff2') format('woff2'),
+		url('/assets/fonts/BabelStoneFlags.svg#BabelStoneFlags') format('svg'),
+		url('/assets/fonts/BabelStoneFlags.eot'),
+		url('/assets/fonts/BabelStoneFlags.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/BabelStoneFlags.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -55,7 +68,7 @@ p {
 	font-size: 1rem;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, ol, ul, dl {
 	margin-block: 0.8rem;
 }
 
@@ -79,6 +92,64 @@ nav {
 	overflow-x: auto;
 	overflow-y: hidden;
 	box-shadow: 0px 0px 12px 0px #101010;
+}
+
+li {
+	margin-left: 2em;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.publication {
+	overflow-wrap: anywhere;
+	padding-inline: 1.25rem;
+	padding-bottom: 0.5rem;
+	line-height: 1.5;
+	color: whitesmoke;
+}
+
+.publication h1, .publication h2, .publication h3, .publication h4 {
+	color: #FFFFFF;
+}
+
+blockquote {
+	padding: 0 1em;
+	color: #9f9f9f;
+	border-left: .25em solid #383838;
+}
+
+.publication img {
+	padding-block: 0.5em;
+}
+
+.publication p {
+	margin-bottom: 1rem;
+}
+
+.publication h1 {
+	font-size: 3rem;
+}
+
+.publication h2 {
+	font-size: 2rem;
+}
+
+.publication h3 {
+	font-size: 1.25rem;
+}
+
+.publication a {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.publication a:hover {
+	text-decoration: underline;
 }
 
 .centered {
@@ -248,13 +319,46 @@ footer {
 	text-decoration: underline;
 }
 
-.about-char-image {
+.about-left-float {
 	float: left;
+}
+
+.about-char-image {
 	margin-left: 0;
 	margin-top: 6px;
 	margin-bottom: 8px;
 	padding-right: 22px;
 	background-color: #222222;
+}
+
+.about-personal-info {
+	display: grid;
+	grid-template-rows: 1fr;
+	align-items: center;
+}
+
+.about-personal-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-right: 22px;
+	margin-bottom: 8px;
+}
+
+.about-personal-info p {
+	font-size: 1rem;
+	line-height: 1;
+	margin-block: 0.3em;
+}
+
+.inline-icon {
+	display: inline-block;
+	overflow: visible;
+	width: 1.4em;
+	height: 1.4em;
+	vertical-align: -0.3em;
+	margin-inline: 0.05em;
+	border-radius: 0.15em;
 }
 
 .info-card-container {
@@ -277,6 +381,11 @@ footer {
 	min-width: 0px;
 	background-color: #292929;
 	font-size: 1rem;
+}
+
+.info-card-link-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .info-card-title {
@@ -612,6 +721,7 @@ a:hover.info-card-text {
 .link-with-icon {
 	display: inline;
 	text-decoration: none;
+	white-space: nowrap;
 }
 
 .link-with-icon-text {
@@ -627,6 +737,13 @@ a:hover.info-card-text {
 	vertical-align: -0.35em;
 	margin-inline: 0.05em;
 	border-radius: 0.25em;
+}
+
+.emoji-icon {
+	font-family: "BabelStoneFlags", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+	display: inline-block;
+	transform: translateY(0.12em);
 }
 
 .link-with-icon:hover .link-with-icon-svg {

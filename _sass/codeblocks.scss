@@ -1,0 +1,56 @@
+pre code {
+	display: block;
+	text-align: left;
+	white-space: pre;
+	word-break: normal;
+	overflow-x: auto;
+	background: #101010;
+	max-width: 100%;
+	min-width: 100px;
+	padding: 15px 20px 12px 22px;
+	font: 14px/1.525em monospace;
+	font-size: 0.85rem;
+}
+
+div.highlight {
+	border-radius: 8px;
+	overflow: hidden;
+	margin-block: 1rem;
+}
+
+code::-webkit-scrollbar {
+	width: 10px;
+}
+
+code::-webkit-scrollbar-track {
+	background: #3d3d3d;
+	box-shadow: inset 0 0 5px black;
+}
+
+/* Handle */
+code::-webkit-scrollbar-thumb {
+	background: rgb(93, 93, 93);
+	box-shadow: inset 0 0 6px black;
+}
+
+/* Handle on hover */
+code::-webkit-scrollbar-thumb:hover {
+	background: rgb(132, 132, 132);
+}
+
+code {
+	background-color: #101010;
+	color: #72e0d1;
+	line-break: normal;
+	max-width: 100%;
+	vertical-align: middle;
+	border-radius: 8px;
+	box-shadow: inset 0 1px 10px 3px rgba(0, 0, 0, .4), 0 1px 0 rgba(255, 255, 255, .1), 0 -1px 0 rgba(0, 0, 0, .5);
+	background-color: #101010;
+	padding: 0.16em 0.5em;
+	border-radius: 8px;
+	vertical-align: middle;
+	font: 14px/1.525em monospace;
+	font-size: 1rem;
+	line-height: 1.75;
+}
