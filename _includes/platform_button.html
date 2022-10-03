@@ -1,10 +1,8 @@
 <a target="_blank" class="platform-button" href="{{ include.url }}">
 	{% if include.svg %}
-	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-		<use href="{{ include.svg }}#main"></use>
-	</svg>
+	<span class="platform-button-svg {% if include.larger_icon %}platform-button-svg-larger{% endif %}" style="background-image: url('{{ include.svg }}');"></span>
 	{% else if include.png %}
-	<img src="{{ include.png }}" width="24" alt="Logo">
+	<img class="platform-button-png {% if include.larger_icon %}platform-button-png-larger{% endif %}" src="{{ include.png }}" width="24" alt="Logo">
 	{% endif %}
 	<p class="platform-button-text" {% if include.padding %}style="padding-top: {{ include.padding }}" {% endif %}>{{ include.name }}</p>
 </a>

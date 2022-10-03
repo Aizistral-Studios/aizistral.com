@@ -11,7 +11,15 @@ description: Be there soon.
 			<h1 id="hello" class="about-title">Hello, wanderer!</h1>
 			<p class="larger-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo id libero doloremque beatae ipsa veniam magni accusamus. Voluptatem ullam veniam vero facere molestiae repudiandae iusto recusandae dolorum maxime nulla!</p>
 			<p>Hic adipisci at, quibusdam cumque temporibus enim a debitis facere. Numquam quos asperiores facilis ut ipsam atque quae itaque nulla explicabo quidem enim, quas, accusamus porro id. Eum, ad neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui praesentium atque vel quod perferendis, minus error earum est aliquam alias ipsa ipsum saepe incidunt debitis aperiam velit aliquid distinctio. Iure.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugiat eum tempore numquam deleniti commodi possimus aliquam accusamus reprehenderit iste! Laudantium perspiciatis illum dolore quos maiores quis earum magnam facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nulla tempora dolorum. Libero itaque iusto consequatur non. Tenetur fuga nesciunt repudiandae omnis maiores beatae, laborum rem, recusandae, quos odit veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ex fugit vel libero voluptatibus! Corrupti harum sunt, ex ut natus deleniti voluptate illum mollitia quam enim asperiores impedit delectus repellendus.</p>
+			<h4>{% include link_with_icon.html url="https://github.com/Aizistral-Studios/" svg="/assets/icons/envelope-fill.svg" name="Publications" %}</h4>
+			<h4>{% include link_with_icon.html url="https://github.com/Aizistral-Studios/" icon="/assets/icons/youtube.png" name="YouTube" %}</h4>
+			<h4>{% include inline_button.html
+				url="https://github.com/Aizistral-Studios/"
+				icon="/assets/icons/aizistudios.png"
+				name="Aizistral Studios"
+			%}</h4>
+			<p>Lorem, ipsum dolor sit amet {% include link_with_icon.html url="https://github.com/Aizistral-Studios/" svg="/assets/icons/envelope-fill.svg" name="Publications" %} adipisicing elit. Exercitationem fugiat eum tempore numquam deleniti commodi possimus aliquam accusamus reprehenderit iste! Laudantium perspiciatis illum dolore quos maiores quis earum magnam facilis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium nulla tempora dolorum. Libero itaque iusto consequatur non. Tenetur fuga nesciunt repudiandae omnis maiores beatae, laborum rem, recusandae, quos odit veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ex fugit vel libero voluptatibus! Corrupti harum sunt, ex ut natus deleniti voluptate illum mollitia quam enim asperiores impedit delectus repellendus.</p>
+			<div class="test-div"></div>
 			<h2 id="projects">My biggest projects</h2>
 			<div class="info-card-container">
 				{%
@@ -64,7 +72,7 @@ description: Be there soon.
 			</p>
 			<h2 id="videos">My YouTube videos</h2>
 			<div class="centered-container">
-				<div class="youtube-thumbnail-container-fullpage">
+				<div class="youtube-thumbnail-container">
 					{%
 						include youtube_thumbnail.html
 						link="https://www.youtube.com/watch?v=gH_q7ZuCJs0"
@@ -131,6 +139,7 @@ description: Be there soon.
 					url="https://www.curseforge.com/members/aizistral/projects"
 					svg="/assets/icons/curseforge.svg"
 					name="CurseForge (Aizistral)"
+					larger_icon=true
 				%}
 				{%
 					include platform_button.html
@@ -180,7 +189,7 @@ description: Be there soon.
 				</div>
 			</div>
 			<h2 id="support">Support me</h2>
-			<p>My public works are free, but if you would like to lend me your financial support - I would be very grateful!<br />You can do so at Buy Me a Coffee:&nbsp;
+			<p>My public works are free, but if you would like to lend me your financial support - I would be very grateful!<br />You can do so at <strong>Buy Me a Coffee</strong>:&nbsp;
 				{%
 					include inline_button.html
 					url="https://www.buymeacoffee.com/aizistral"
