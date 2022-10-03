@@ -555,15 +555,15 @@ a:hover.info-card-text {
 	transform: scale(1.05);
 }
 
-.platform-button-text, .platform-button-svg {
+.platform-button-text, .platform-button-svg, .platform-button-png {
 	transition-duration: inherit;
 }
 
-.platform-button-svg {
+.platform-button-svg, .platform-button-png {
 	filter: invert(100%);
 }
 
-.platform-button:hover .platform-button-text, .platform-button:hover .platform-button-svg {
+.platform-button:hover .platform-button-text, .platform-button:hover .platform-button-svg, .platform-button:hover .platform-button-png {
 	transition-duration: inherit;
 	filter: invert(68%) sepia(94%) saturate(3834%) hue-rotate(351deg) brightness(101%) contrast(101%);
 }
@@ -653,6 +653,13 @@ a:hover.info-card-text {
 	margin-right: 2rem;
 }
 
+
+@media screen and (max-width: 1280px) {
+	main {
+		max-width: 90%;
+	}
+}
+
 @media screen and (max-width: 1080px) {
 	.header-button_text {
 		display: none;
@@ -675,10 +682,6 @@ a:hover.info-card-text {
 }
 
 @media screen and (max-width: 750px) {
-	main {
-		max-width: 90%;
-	}
-
 	nav {
 		flex-direction: column;
 		align-items: center;
