@@ -68,6 +68,10 @@ p {
 	font-size: 1rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
 p, h1, h2, h3, h4, h5, h6, ol, ul, dl {
 	margin-block: 0.8rem;
 }
@@ -94,8 +98,8 @@ nav {
 	box-shadow: 0px 0px 12px 0px #101010;
 }
 
-li {
-	margin-left: 2em;
+ol, ul, dl {
+	padding-left: 2em;
 	color: inherit;
 }
 
@@ -110,6 +114,11 @@ img {
 	padding-bottom: 0.5rem;
 	line-height: 1.5;
 	color: whitesmoke;
+}
+
+.publication ul ul, .publication ul ol, .publication ol ol, .publication ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .publication h1, .publication h2, .publication h3, .publication h4 {
@@ -142,13 +151,13 @@ blockquote {
 	font-size: 1.25rem;
 }
 
-.publication a {
-	color: #FFF;
-	text-decoration: underline;
-	font-weight: bold;
+.publication a:not(.link-with-icon, .inline-button) {
+	color: #FF7C11;
+	text-decoration: none;
+	//font-weight: bold;
 }
 
-.publication a:hover {
+.publication a:not(.link-with-icon, .inline-button):hover {
 	text-decoration: underline;
 }
 
@@ -321,6 +330,10 @@ footer {
 
 .about-left-float {
 	float: left;
+}
+
+.nomarkdown {
+	display: inline;
 }
 
 .about-char-image {
@@ -721,7 +734,7 @@ a:hover.info-card-text {
 .link-with-icon {
 	display: inline;
 	text-decoration: none;
-	white-space: nowrap;
+	white-space: wrap;
 }
 
 .link-with-icon-text {

@@ -1,9 +1,7 @@
 <a target="{% if include.target %}{{ include.target }}{% else %}_blank{% endif %}" class="inline-button" href="{{ include.url }}">
-	{% if include.icon %}
+	{%- if include.icon -%}
 	<img class="inline-button-png" src="{{ include.icon }}" alt="Logo" width="28">
-	{% else if include.svg %}
-	<svg class="inline-button-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-		<use href="{{ include.svg }}#main"></use>
-	</svg>
-	{% endif %}
-	{{ include.name }}</a>
+	{%- else if include.svg -%}
+	<svg class="inline-button-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><use href="{{ include.svg }}#main"></use></svg>
+	{%- endif -%}
+	&nbsp;{{ include.name }}</a>
