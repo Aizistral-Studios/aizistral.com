@@ -480,6 +480,7 @@ footer {
 	margin-right: 5px;
 	width: 28.5rem;
 	min-width: 375px;
+	min-height: 205px;
 	background-color: #292929;
 	font-size: 0.9rem;
 	display: flex;
@@ -494,12 +495,20 @@ footer {
 }
 
 .publication-card-title {
-	font-size: 1.6rem;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	min-width: 334px;
+	font-size: 1.6rem;
 }
 
 .publication-card-content-partial {
 	padding-right: 20px;
+}
+
+.publication-card-content {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
 }
 
 .publication-card-sidelink {
