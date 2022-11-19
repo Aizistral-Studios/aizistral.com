@@ -3,16 +3,16 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>{{ page.title }}{% if page.url.size > 1 %} - Aizistral's Haven{% endif %}</title>
+		<title>{{ page.title }}{% if page.url.size > 1 %} | Aizistral's Haven{% endif %}</title>
 		<meta name="description" content="{{ page.description }}" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 		<link rel="stylesheet" href="/assets/css/styles.css">
 		<link rel="icon" href="/assets/images/aizhead.png" type="image/x-icon">
 
 		{% if page.redirect %}
-		<meta http-equiv="Refresh" content="0; url='{{ page.redirect }}}}'" />
+		<meta http-equiv="Refresh" content="0; url='{{ page.redirect }}'" />
 		{% endif %}
 
 		{% feed_meta %}

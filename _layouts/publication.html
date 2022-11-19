@@ -3,7 +3,37 @@ layout: default
 ---
 
 <main>
-	<article class="publication">
+	<article class="publication markdown-page">
+		<h1 id="publication-title"><svg class="publication-title-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+				<use href="/assets/icons/paper.svg#main"></use>
+			</svg> {{ page.title }}</h1>
+		<aside class="publication-info">
+			<div class="publication-info-row">
+				<p>{% include inline_icon.html svg="/assets/icons/calendar3.svg" %} Date:</p>
+				<p>{{ page.date | date: "%d.%m.%Y" }}</p>
+			</div>
+			<div class="publication-info-row">
+				<p>{% include inline_icon.html svg="/assets/icons/person-fill.svg" %} Author:</p>
+				<p>{{ page.author }}</p>
+			</div>
+			{% if page.collaborators %}
+			<div class="publication-info-row">
+				<p>{% include inline_icon.html svg="/assets/icons/people-fill.svg" %} Collaborators:</p>
+				<p>
+					{%- assign collaborators = page.collaborators | split: ", " -%}
+					{%- assign amount = collaborators.size | minus: 1 -%}
+					{%- assign range = (0..amount) -%}
+					{%- for i in range -%}
+					{% include inline_icon.html svg="/assets/icons/discord.svg" %}&nbsp;{{ collaborators[i] }}{% if i < amount %},<br>{% endif %}
+					{%- endfor -%}
+				</p>
+			</div>
+			<div class="publication-info-row suggest-changes-row">
+				{%- assign suggest_link = page.path | prepend: "https://github.com/Aizistral-Studios/aizistral.com/edit/master/" -%}
+				<p class="suggest-changes-element">{% include link_with_icon.html class="suggest-changes-icon" target="_blank" url=suggest_link name="Suggest changes" svg="/assets/icons/pencil.svg" %}</p>
+			</div>
+			{% endif %}
+		</aside>
 		{{ content }}
 	</article>
 </main>

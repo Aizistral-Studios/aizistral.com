@@ -1,0 +1,52 @@
+---
+layout: default
+title: Publications
+description: "???"
+---
+
+<body>
+	<main>
+		<div>
+			<h1>Publications</h1>
+			<div class="publication-card-container">
+				{% for publication in site.publications %}
+				<a href="{% if publication.redirect %}{{ publication.redirect }}{% else %}{{ publication.url }}{% endif %}" target="_blank" class="publication-card">
+					<div class="publication-card-content {% if publication.redirect %}publication-card-content-partial{% endif %}">
+						<h3 class="publication-card-title publication-info-row">{{ publication.title }}</h3>
+						<div class="publication-info-row">
+							<p>{% include inline_icon.html svg="/assets/icons/calendar3.svg" %} <strong class="publication-card-text">Date:</strong></p>
+							<p><span class="publication-card-text">{{ publication.date | date: "%d.%m.%Y" }}</span></p>
+						</div>
+						<div class="publication-info-row">
+							<p>{% include inline_icon.html svg="/assets/icons/person-fill.svg" %} <strong class="publication-card-text">Author:</strong></p>
+							<p><span class="publication-card-text">{{ publication.author }}</span></p>
+						</div>
+						<div class="publication-info-row">
+							<p>{% include inline_icon.html svg="/assets/icons/people-fill.svg" %} <strong class="publication-card-text">Collaborators:</strong></p>
+							<p>
+								{%- assign collaborators = publication.collaborators | split: ", " -%}
+								{%- assign amount = collaborators.size | minus: 1 -%}
+								{%- assign range = (0..amount) -%}
+								{%- for i in range -%}
+								{% include inline_icon.html svg="/assets/icons/discord.svg" %}&nbsp;<span class="publication-card-text">{{ collaborators[i] }}</span>{% if i < amount %}<span class="publication-card-text">,<br></span>{% endif %}
+								{%- endfor -%}
+							</p>
+						</div>
+					</div>
+
+					{% if publication.redirect %}
+					<div class="publication-card-sidelink">
+						<svg class="publication-card-platform-icon block" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+							<use href="/assets/icons/github.svg#main"></use>
+						</svg>
+						<svg class="publication-card-external-icon block" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+							<use href="/assets/icons/box-arrow-up-right.svg#main"></use>
+						</svg>
+					</div>
+					{% endif %}
+				</a>
+				{% endfor %}
+			</div>
+		</div>
+	</main>
+</body>

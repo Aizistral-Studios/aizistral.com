@@ -2,7 +2,7 @@
 	<p class="info-card-title">{% if include.logo %}<img draggable="false" src="{{ include.logo }}" alt="Site Logo" width="40" class="{{ include.logo_class | default: "info-card-website-icon" }} absolute-position">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{{ include.name }}</p>
 	<div class="info-card-main">
 		<p class="info-card-text info-card-desc">{{ include.desc }}</p>
-		<div class="info-card-grid block">
+		<div class="info-card-grid">
 			<a target="_blank" href="{{ include.link }}" class="info-card-text">
 				<span class="info-card-icon">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" fill="#FFFFFF" class="bi bi-browser-firefox info-card-grid-svg" viewBox="0 0 16 16">
