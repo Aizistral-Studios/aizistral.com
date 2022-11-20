@@ -155,6 +155,38 @@ footer {
 
 
 
+// --- ERROR PAGE LAYOUT --- //
+
+.error-page-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.error-page-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+	text-align: center;
+	transform: translateY(-1rem);
+}
+
+.error-page-icon {
+	width: 6rem;
+	height: 6rem;
+	margin-top: 0.3rem;
+	color: var(--ERROR-PAGE-ICON);
+}
+
+.error-page-desc {
+	width: 0;
+	min-width: 100%;
+}
+
+
+
 // --- INDEX PAGE LAYOUT --- //
 
 .index-title {
