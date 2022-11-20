@@ -1,5 +1,12 @@
 ---
 ---
-@import "main";
+
+@import "globals";
+@import "defaults";
+@import "layouts";
+@import "markdown";
+@import "features";
+@import "utils";
+@import "adaptivity";
 @import "monokai";
 @import "codeblocks";

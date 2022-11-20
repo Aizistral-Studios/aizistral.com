@@ -1,0 +1,48 @@
+// --- MARKDOWN-BASED PAGE LAYOUT --- //
+
+.markdown-page {
+	overflow-wrap: anywhere;
+	padding-inline: 1.25rem;
+	padding-bottom: 0.5rem;
+	line-height: 1.5;
+	color: var(--DEFAULT-TEXT);
+}
+
+.markdown-page ul ul, .markdown-page ul ol, .markdown-page ol ol, .markdown-page ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-page h1, .markdown-page h2, .markdown-page h3, .markdown-page h4 {
+	color: var(--BRIGHT-TEXT);
+}
+
+.markdown-page img {
+	padding-block: 0.5em;
+}
+
+.markdown-page p {
+	margin-bottom: 1rem;
+}
+
+.markdown-page h1 {
+	font-size: 3rem;
+}
+
+.markdown-page h2 {
+	font-size: 2rem;
+}
+
+.markdown-page h3 {
+	font-size: 1.25rem;
+}
+
+.markdown-page a:not(.link-with-icon, .inline-button) {
+	color: var(--ACCENT-COLOR);
+	text-decoration: none;
+	//font-weight: bold;
+}
+
+.markdown-page a:not(.link-with-icon, .inline-button):hover {
+	text-decoration: underline;
+}

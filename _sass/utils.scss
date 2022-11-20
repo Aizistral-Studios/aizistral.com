@@ -1,0 +1,51 @@
+// --- UTILITY CLASSES --- //
+
+.centered {
+	text-align: center;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.inline {
+	display: inline;
+}
+
+.larger-text {
+	font-size: 1.5rem;
+	line-height: 1.25;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.nomarkdown {
+	display: inline;
+}
+
+.bottom-border {
+	border-bottom: 1px solid var(--SOLID-GRAY-BORDER);
+}
+
+.block {
+	display: block;
+}
+
+.absolute-position {
+	position: absolute;
+}
+
+.notransform {
+	transform: none;
+}
+
+.centered-container {
+	display: flex;
+	justify-content: center;
+}

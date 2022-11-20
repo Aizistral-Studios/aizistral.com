@@ -1,0 +1,50 @@
+// --- MEDIA QUERIES AND WHATNOT --- //
+
+@media screen and (max-width: 1280px) {
+	main {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.header-button_text {
+		display: none;
+	}
+
+	.header-button_icon {
+		margin-right: 0px;
+		transform: scale(1.25);
+	}
+
+	// .youtube-thumbnail-container {
+	// 	justify-content: center;
+	// }
+}
+
+@media screen and (max-width: 920px) {
+	.jekyll-text {
+		margin-right: 30px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header-buttons {
+		margin-left: 3.5%;
+		border-top: var(--NO-CONTENT-BACKGROUND) solid 2px;
+	}
+
+	.header-button_icon {
+		min-height: 3rem;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.info-card-title {
+		white-space: initial;
+	}
+}

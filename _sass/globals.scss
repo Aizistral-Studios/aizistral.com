@@ -1,0 +1,47 @@
+// --- GLOBAL IMPORTS AND VARIABLES --- //
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@font-face {
+	font-family: 'BabelStoneFlags';
+	src: url('/assets/fonts/BabelStoneFlags.woff') format('woff'),
+		url('/assets/fonts/BabelStoneFlags.woff2') format('woff2'),
+		url('/assets/fonts/BabelStoneFlags.svg#BabelStoneFlags') format('svg'),
+		url('/assets/fonts/BabelStoneFlags.eot'),
+		url('/assets/fonts/BabelStoneFlags.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/BabelStoneFlags.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--ACCENT-COLOR: #FF7C11;
+	--TEXT-SHADOW-LIGHT: rgba($color: #101010, $alpha: 0.3);
+	--TEXT-SHADOW-BOLD: rgba(0, 0, 0, 0.5);
+	--FOOTER-BACKGROUND: #101010;
+	--FOOTER-TEXT: lightgray;
+	--DEFAULT-TEXT: #f1f1f1;
+	--DARKER-TEXT: rgb(200, 200, 200);
+	--BRIGHT-TEXT: white;
+	--CARD-SHADOW: 2px 2px 8px #101010;
+	--CARD-SHADOW-LIGHTER: 2px 2px 4px -1px #101010;
+	--CARD-SHADOW-COLOR: #101010;
+	--LIGHT-BORDER: rgba(255, 255, 255, 0.1);
+	--MEDIUM-BORDER: rgba(255, 255, 255, 0.2);
+	--SOLID-GRAY-BORDER: gray;
+	--CARD-BACKGROUND: #292929;
+	--FANCY-TITLE-GRADIENT: linear-gradient(to bottom, #eb6400 0%, #7f1600 100%);
+	--FANCY-TITLE-CORNER: #541906;
+	--MAIN-BACKGROUND: #222222;
+	--NO-CONTENT-BACKGROUND: #181818;
+	--HEADER-BUTTON-HOVER-BACKGROUND: #1d1d1d;
+	--QUOTE: #9f9f9f;
+	--QUOTE-BORDER: #383838;
+	--YTT-TIME-BACKGROUND: rgba(0, 0, 0, 0.8);
+	--YTT-TEXT: rgb(170, 170, 170);
+	--YTT-TITLE: white;
+	--INLINE-BUTTON-HOVER-BACKGROUND: #333;
+	--PLATFORM-BUTTON-ICON: invert(100%);
+	--PLATFORM-BUTTON-HOVER-TEXT: invert(68%) sepia(94%) saturate(3834%) hue-rotate(351deg) brightness(101%) contrast(101%);
+}
