@@ -171,7 +171,7 @@ a:hover.info-card-text {
 	border-radius: 0.4375rem;
 	background-color: var(--CARD-BACKGROUND);
 	box-shadow: var(--CARD-SHADOW-LIGHTER);
-	transition: all 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 }
 
 .youtube-thumbnail:last-child {

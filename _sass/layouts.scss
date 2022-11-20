@@ -123,6 +123,18 @@ footer {
 	margin-right: 80px;
 }
 
+.javascript-text {
+	transform: translateY(1px);
+	white-space: nowrap;
+	margin-right: 90px;
+}
+
+.javascript-text .inline-icon {
+	width: 32px;
+	height: 32px;
+	vertical-align: -0.5rem;
+}
+
 .footer-link {
 	color: var(--FOOTER-TEXT);
 }
@@ -271,7 +283,6 @@ footer {
 	padding-inline: 20px;
 	margin-block: 20px;
 	box-shadow: var(--CARD-SHADOW);
-	transition: transform 0.2s ease-in-out;
 	margin-left: 10px;
 	margin-right: 5px;
 	width: 28.5rem;
@@ -282,7 +293,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	transition: all 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 }
 
 .publication-card:hover {
