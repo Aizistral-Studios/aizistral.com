@@ -322,7 +322,6 @@ footer {
 	text-decoration: none;
 	border-radius: 10px;
 	padding-inline: 20px;
-	padding-bottom: 8px;
 	margin-block: 20px;
 	box-shadow: var(--CARD-SHADOW);
 	margin-left: 10px;
@@ -359,6 +358,7 @@ footer {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: space-evenly;
+	margin-bottom: 8px;
 }
 
 .publication-card-sidelink {
