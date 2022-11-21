@@ -45,6 +45,7 @@
 	border-left: var(--NO-CONTENT-BACKGROUND) solid 2px;
 	font-family: 'Oswald';
 	font-size: 1.25rem;
+	color: var(--BRIGHT-TEXT);
 }
 
 .header-button:last-child {
@@ -137,10 +138,12 @@ footer {
 
 .footer-link {
 	color: var(--FOOTER-TEXT);
+	text-decoration: underline;
 }
 
 .footer-link:hover, .footer-link:active {
 	color: var(--BRIGHT-TEXT);
+	text-decoration: underline;
 }
 
 @keyframes infinite-rotation {
@@ -313,6 +316,7 @@ footer {
 	text-decoration: none;
 	border-radius: 10px;
 	padding-inline: 20px;
+	padding-bottom: 8px;
 	margin-block: 20px;
 	box-shadow: var(--CARD-SHADOW);
 	margin-left: 10px;
@@ -376,7 +380,7 @@ footer {
 	display: block;
 	text-align: center;
 	position: relative;
-	font-size: 2rem;
+	font-size: 3rem;
 	font-family: fantasy;
 	font-weight: normal;
 	margin-inline: -64px;

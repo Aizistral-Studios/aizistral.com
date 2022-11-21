@@ -22,10 +22,6 @@ body {
 	min-height: 100vh;
 }
 
-:any-link {
-	color: var(--BRIGHT-TEXT);
-}
-
 h1 {
 	font-size: 3rem;
 	border-bottom: 1px solid var(--LIGHT-BORDER);
@@ -102,4 +98,14 @@ blockquote {
 	padding: 0 1em;
 	color: var(--QUOTE);
 	border-left: .25em solid var(--QUOTE-BORDER);
+}
+
+a {
+	color: var(--LINK-NORMAL);
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: var(--LINK-HOVERED);
+	text-decoration: none;
 }

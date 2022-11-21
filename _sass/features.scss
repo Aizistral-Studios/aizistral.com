@@ -139,6 +139,10 @@ a:hover.info-card-text {
 	transform: scale(1.2) translateY(0.0625rem) translateX(-0.0625rem);
 }
 
+a.info-card-text {
+	color: var(--BRIGHT-TEXT);
+}
+
 
 
 // --- YOUTUBE THUMBNAIL CARDS --- //
@@ -255,6 +259,7 @@ a:hover.info-card-text {
 .platform-button, .inline-button {
 	text-decoration: none;
 	transition: all 0.1s ease-in-out;
+	color: var(--BRIGHT-TEXT);
 }
 
 .platform-button {
@@ -326,7 +331,7 @@ a:hover.info-card-text {
 	border-radius: 0.25em;
 }
 
-.link-with-icon:hover, .link-with-icon:hover .link-with-icon-text, a:hover {
+.link-with-icon:hover, .link-with-icon:hover .link-with-icon-text {
 	color: var(--ACCENT-COLOR);
 }
 
@@ -334,6 +339,7 @@ a:hover.info-card-text {
 	display: inline;
 	text-decoration: none;
 	white-space: wrap;
+	color: var(--BRIGHT-TEXT);
 }
 
 .link-with-icon-text {

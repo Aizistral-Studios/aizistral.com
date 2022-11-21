@@ -10,7 +10,7 @@ description: "???"
 			<h1>Publications</h1>
 			<div class="publication-card-container">
 				{% for publication in site.publications reversed %}
-				<a href="{% if publication.redirect %}{{ publication.redirect }}{% else %}{{ publication.url }}{% endif %}" target="_blank" class="publication-card">
+				<a href="{% if publication.redirect %}{{ publication.redirect }}{% else %}{{ publication.url }}{% endif %}" target="{% if publication.redirect %}_blank{% else %}_self{% endif %}" class="publication-card">
 					<div class="publication-card-content {% if publication.redirect %}publication-card-content-partial{% endif %}">
 						<h3 class="publication-card-title publication-info-row">{{ publication.title }}</h3>
 						<div class="publication-card-main-area">
