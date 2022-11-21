@@ -235,6 +235,10 @@ footer {
 	text-shadow: 0px 0px 4px var(--CARD-SHADOW-COLOR);
 }
 
+.index-subtitle .link-with-icon-text, .index-subtitle .link-with-icon-svg {
+	transition: color 0.2s;
+}
+
 
 
 // --- ABOUT PAGE LAYOUT --- //
@@ -264,6 +268,7 @@ footer {
 
 .about-char-image {
 	margin-left: 0;
+	width: 225px;
 }
 
 .about-content-separator {
