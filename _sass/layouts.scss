@@ -192,6 +192,11 @@ footer {
 
 // --- INDEX PAGE LAYOUT --- //
 
+.index-area {
+	padding-inline: 60px;
+	padding-bottom: 50px;
+}
+
 .index-title {
 	display: block;
 	text-align: center;
@@ -199,8 +204,8 @@ footer {
 	font-size: 3.5rem;
 	font-family: fantasy;
 	font-weight: normal;
-	margin-inline: calc(-1.5rem - 20px);
-	padding-inline: 1.5rem;
+	margin-inline: -80px;
+	padding-inline: 80px;
 	margin-top: 10px;
 	margin-bottom: 20px;
 	padding-block: 10px;
@@ -226,6 +231,7 @@ footer {
 .index-subtitle, .index-subtitle .link-with-icon-text {
 	text-decoration: none;
 	font-size: 2.5rem;
+	margin-top: 2.5rem;
 	text-shadow: 0px 0px 4px var(--CARD-SHADOW-COLOR);
 }
 
