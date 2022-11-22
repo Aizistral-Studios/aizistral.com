@@ -16,3 +16,10 @@ jobs:
 
       # Standard usage
       - uses:  lemonarc/jekyll-action@1.0.0
+
+      # Capture artifacts
+      - name: upload
+        uses: actions/upload-artifact@v2
+        with:
+          name: Website
+          path: ./_site/
