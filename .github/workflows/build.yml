@@ -19,7 +19,7 @@ jobs:
 
       # Capture artifacts
       - name: upload
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Website
           path: ./_site/
