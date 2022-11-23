@@ -1,6 +1,7 @@
 // --- GLOBAL IMPORTS AND VARIABLES --- //
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 @font-face {
 	font-family: 'BabelStoneFlags';
@@ -10,6 +11,14 @@
 		url('/assets/fonts/BabelStoneFlags.eot'),
 		url('/assets/fonts/BabelStoneFlags.eot?#iefix') format('embedded-opentype'),
 		url('/assets/fonts/BabelStoneFlags.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Edwardian Script ITC';
+	src: url('/assets/fonts/EdwardianScriptITC.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
