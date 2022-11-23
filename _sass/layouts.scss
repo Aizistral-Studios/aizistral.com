@@ -122,7 +122,8 @@ footer {
 }
 
 .jekyll-logo {
-	max-height: 3rem;
+	height: 3rem;
+	width: auto;
 	transform: translateY(0.75rem);
 }
 
@@ -130,12 +131,14 @@ footer {
 	transform: translateY(-0.75rem);
 	white-space: nowrap;
 	margin-right: 80px;
+	min-width: 200px;
 }
 
 .javascript-text {
 	transform: translateY(1px);
 	white-space: nowrap;
 	margin-right: 90px;
+	margin-left: 40px;
 }
 
 .javascript-text .inline-icon {
@@ -152,6 +155,10 @@ footer {
 .footer-link:hover, .footer-link:active {
 	color: var(--BRIGHT-TEXT);
 	text-decoration: underline;
+}
+
+.footer-left {
+	margin-right: 30px;
 }
 
 @keyframes infinite-rotation {
