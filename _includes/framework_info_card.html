@@ -1,5 +1,5 @@
 <div class="info-card">
-	<p class="info-card-title">{% if include.logo %}<img draggable="false" src="{{ include.logo }}" alt="Framework Logo" width="40" class="{{ include.logo_class | default: "info-card-framework-icon" }} absolute-position">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% endif %}{{ include.name }}</p>
+	<p class="info-card-title">{% if include.logo %}<img draggable="false" src="{{ include.logo }}" alt="Framework Logo" width="40" class="{{ include.logo_class | default: "info-card-framework-icon" }}">&nbsp;{% endif %}{{ include.name }}</p>
 	<div class="info-card-main">
 		<p class="info-card-text info-card-desc">{{ include.desc }}</p>
 		<div class="info-card-grid">

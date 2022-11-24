@@ -1,0 +1,15 @@
+<svg version="1.1" id="main" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="348.711px" height="348.71px" viewBox="0 0 348.711 348.71" enable-background="new 0 0 348.711 348.71"
+	 xml:space="preserve">
+<circle fill="#1A171B" stroke="#FFFFFF" cx="174.355" cy="174.355" r="173.855"/>
+<circle fill="#FCE100" cx="174.355" cy="174.355" r="158.208"/>
+<g>
+	<g>
+		<path fill="#1A171B" d="M103.075,50.469C57.25,76.926,31.67,124.983,31.771,174.355h142.583L103.075,50.469z"/>
+		<path fill="#1A171B" d="M245.635,50.469c45.825,26.457,71.404,74.514,71.304,123.886H174.355L245.635,50.469z"/>
+		<path fill="#1A171B" d="M103.254,297.606c45.562,26.305,99.606,24.594,142.201,0.223l-71.288-123.474L103.254,297.606z"/>
+	</g>
+	<circle fill="#FCE100" cx="174.354" cy="173.931" r="43.463"/>
+	<circle fill="#1A171B" cx="174.355" cy="173.931" r="27.816"/>
+</g>
+</svg>
