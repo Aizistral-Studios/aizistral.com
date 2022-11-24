@@ -24,7 +24,7 @@ description: "???"
 							</div>
 							<div class="publication-info-row">
 								<p class="publication-card-text">{% include inline_icon.html svg="/assets/icons/people-fill.svg" %} <strong class="publication-card-text">Collaborators:</strong></p>
-								<p>
+								<p class="publication-card-text">
 									{%- assign collaborators = publication.collaborators | split: ", " -%}
 									{%- assign amount = collaborators.size | minus: 1 -%}
 									{%- assign range = (0..amount) -%}
