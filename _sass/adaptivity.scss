@@ -50,8 +50,11 @@
 
 	.publication-card {
 		flex-direction: column;
-		transform: scale(0.8);
-		margin-block: -20px;
+		min-width: 335px;
+	}
+
+	.publication-card-title {
+		min-width: 0;
 	}
 
 	.publication-card:hover {
@@ -110,6 +113,42 @@
 // --- SPECIAL HACKS FOR ABYSMAL SCREEN SIZES --- //
 
 @media screen and (max-width: 400px) {
+	.publication-card {
+		min-width: 280px;
+		margin-inline: 0;
+	}
+
+	.publication-card-title {
+		padding-top: 10px;
+		padding-bottom: 8px;
+		min-width: 260px;
+		font-size: 1.25rem;
+	}
+
+	.publication-card-sidelink {
+		padding-top: 12px;
+		margin-bottom: 12px;
+	}
+
+	.publication-card-platform-icon {
+		height: 32px;
+		width: auto;
+	}
+
+	.publication-card-external-icon {
+		height: 20px;
+		width: auto;
+	}
+
+	.publication-info-row {
+		gap: 10px;
+		margin-block: 0.2em;
+	}
+
+	.publication-card-text, .publication-card-text .inline-icon {
+		font-size: 0.7rem;
+	}
+
 	h1 {
 		text-align: center;
 	}

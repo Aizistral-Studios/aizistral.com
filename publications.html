@@ -15,15 +15,15 @@ description: "???"
 						<h3 class="publication-card-title publication-info-row">{{ publication.title }}</h3>
 						<div class="publication-card-main-area">
 							<div class="publication-info-row">
-								<p>{% include inline_icon.html svg="/assets/icons/calendar3.svg" %} <strong class="publication-card-text">Date:</strong></p>
+								<p class="publication-card-text">{% include inline_icon.html svg="/assets/icons/calendar3.svg" %} <strong class="publication-card-text">Date:</strong></p>
 								<p><span class="publication-card-text">{{ publication.date | date: "%d.%m.%Y" }}</span></p>
 							</div>
 							<div class="publication-info-row">
-								<p>{% include inline_icon.html svg="/assets/icons/person-fill.svg" %} <strong class="publication-card-text">Author:</strong></p>
+								<p class="publication-card-text">{% include inline_icon.html svg="/assets/icons/person-fill.svg" %} <strong class="publication-card-text">Author:</strong></p>
 								<p><span class="publication-card-text">{{ publication.author }}</span></p>
 							</div>
 							<div class="publication-info-row">
-								<p>{% include inline_icon.html svg="/assets/icons/people-fill.svg" %} <strong class="publication-card-text">Collaborators:</strong></p>
+								<p class="publication-card-text">{% include inline_icon.html svg="/assets/icons/people-fill.svg" %} <strong class="publication-card-text">Collaborators:</strong></p>
 								<p>
 									{%- assign collaborators = publication.collaborators | split: ", " -%}
 									{%- assign amount = collaborators.size | minus: 1 -%}
