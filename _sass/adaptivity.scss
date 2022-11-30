@@ -111,6 +111,11 @@
 // --- SPECIAL HACKS FOR ABYSMAL SCREEN SIZES --- //
 
 @media screen and (max-width: 400px) {
+	.error-page-content {
+		flex-direction: column-reverse;
+		gap: 10px;
+	}
+
 	.publication-card {
 		min-width: 280px;
 		margin-inline: 0;

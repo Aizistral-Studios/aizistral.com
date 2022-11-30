@@ -17,6 +17,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	justify-content: space-between;
 	background-color: var(--NO-CONTENT-BACKGROUND);
 	color: var(--DEFAULT-TEXT);
 	min-height: 100vh;
@@ -67,7 +68,7 @@ header {
 
 main {
 	width: 70%;
-	min-height: 65vh;
+	flex-grow: 1;
 	margin: 24px auto;
 	border-radius: 8px 8px 8px 8px;
 	background-color: var(--MAIN-BACKGROUND);

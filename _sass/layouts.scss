@@ -80,7 +80,7 @@ footer {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: auto;
+	min-width: 100%;
 	border-top: var(--FOOTER-BACKGROUND) solid 1px;
 	background-color: var(--FOOTER-BACKGROUND);
 	color: var(--FOOTER-TEXT);
