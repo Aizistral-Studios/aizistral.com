@@ -96,7 +96,7 @@ footer {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
-	padding-right: 16px;
+	// padding-right: 16px;
 }
 
 .footer-right {
@@ -108,7 +108,7 @@ footer {
 }
 
 .footer-right-last {
-	min-width: 11.1875rem;
+	min-width: max-content;
 }
 
 .jekyll-logo {
