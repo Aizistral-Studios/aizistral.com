@@ -9,34 +9,13 @@
 	//border-inline: #181818 solid 2px;
 }
 
-// .header-logo:hover {
-// 	background-color: #1f1f1f;
-// }
-
 .header-logo-img {
 	display: inline;
 	max-height: 68px;
 	width: auto;
-	//min-width: min-content;
+	object-fit: contain;
 	margin-top: 8px;
 	margin-bottom: 5px;
-}
-
-.header-logo-text {
-	display: inline;
-	max-height: 60px;
-	margin-top: 14px;
-	margin-bottom: 8px;
-	width: auto;
-}
-
-.header-logo_text, .header-logo_text:hover {
-	font-family: 'Edwardian Script ITC';
-	font-size: 3rem;
-	font-weight: normal;
-	margin-right: 20px;
-	white-space: nowrap;
-	color: var(--BRIGHT-TEXT);
 }
 
 .header-buttons {
