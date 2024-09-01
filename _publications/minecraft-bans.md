@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: Research on Minecraft's global bans
+title: Research on Minecraft's Global Bans
 description: Research on Minecraft's global bans.
 date: 02.09.2022
 author: Aizistral

@@ -1,22 +1,347 @@
 ---
 layout: default
-title: Aizistral's Haven
+title: Aizistral™
 description: Personal website of Aizistral, Java, web and Minecraft mod developer.
 ---
 
 <body>
-	<main class="index-area">
-		<div>
-			<h1 id="index-title" class="index-title">Hello, wanderer!</h1>
-			<p class="larger-text">Welcome to Aizistral's Haven, one of the few quiet places in this chaotic and inhospitable world we call "the internet". I'm certain you won't have much trouble finding your way around, but in case you want an overview of what you may find here - such is placed below.</p>
-			<h2 class="index-subtitle">{% include link_with_icon.html target="_self" url="/wikis" svg="/assets/icons/book.svg" name="Wikis" %}</h2>
-			<p class="larger-text">Different wikis dedicated to various projects I maintain. They aren't there yet actually, but someday they will be, or so I hope at least. For now most of my projects still use <a href="https://github.com/Aizistral-Studios" target="_blank">GitHub</a> as a wiki hosting solution.</p>
-			<h2 class="index-subtitle">{% include link_with_icon.html target="_self" url="/publications" svg="/assets/icons/paper.svg" name="Publications" %}</h2>
-			<p class="larger-text">Articles that I sometimes publish, usually dedicated to some kind of research or an in-depth discussion. I don't plan on having a classical blog yet, so that's the closest you can get in the meantime. Since this website is static - most publications are still hosted externally on <a href="https://gist.github.com/Aizistral" target="_blank">GitHub Gists</a>, to allow for interactivity in the form of comments and such.</p>
-			<h2 class="index-subtitle">{% include link_with_icon.html target="_self" url="/about" svg="/assets/icons/info-circle.svg" name="About" %}</h2>
-			<p class="larger-text">If you wonder who is the mysterious person behind this website - that's where you can find out. I usually don't talk much about myself, so it's quite a unique opportunity you have to learn some details!</p>
-			<h2 class="index-subtitle">{% include link_with_icon.html target="_self" url="/about/#contact" svg="/assets/icons/envelope.svg" name="Contact" %}</h2>
-			<p class="larger-text">Check out if you're looking to get in touch with me directly, for whatever reason that might be.</p>
-		</div>
-	</main>
+  <main>
+    <div>
+      <div class="about-left-float">
+        <div class="about-left-float-content">
+          <div class="about-char-image-container">
+            <img
+              draggable="false"
+              src="/assets/images/mcchar-hd.png"
+              alt="Minecraft Character"
+              class="about-char-image"
+            />
+          </div>
+          <div class="about-content-separator"></div>
+          <div class="about-personal-info">
+            <div class="about-personal-row">
+              <p>
+                {% include inline_icon.html svg="/assets/icons/earth-2.svg" %}
+                Born in:
+              </p>
+              <p class="about-country">
+                Ukraine {% include inline_icon.html
+                svg="/assets/icons/flag-ua.svg" %}
+              </p>
+            </div>
+            <div class="about-personal-row">
+              <p>
+                {% include inline_icon.html svg="/assets/icons/geo-alt-fill.svg"
+                %} Living in:
+              </p>
+              <p class="about-country">
+                Poland {% include inline_icon.html
+                svg="/assets/icons/flag-pl.svg" %}
+              </p>
+            </div>
+            <div class="about-personal-row">
+              <p>
+                {% include inline_icon.html svg="/assets/icons/person-fill.svg"
+                %} Age:
+              </p>
+              <p>24</p>
+            </div>
+            <div class="about-personal-row">
+              <p>
+                {% include inline_icon.html svg="/assets/icons/gender-male.svg"
+                %} Gender:
+              </p>
+              <p>Male</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 id="hello" class="about-title">Who the hell am I?</h1>
+      <p>
+        Good question! I am Aizistral, Java and a bit of a web developer. You
+        might know me for my Minecraft mods, which have over 15 million
+        downloads combined. I have authored widely known mods such as
+        <a
+          href="https://www.curseforge.com/minecraft/mc-mods/forgotten-relics"
+          target="_blank"
+          >Forgotten Relics</a
+        >,
+        <a
+          href="https://www.curseforge.com/minecraft/mc-mods/enigmatic-legacy"
+          target="_blank"
+          >Enigmatic Legacy</a
+        >
+        and
+        <a
+          href="https://www.curseforge.com/minecraft/mc-mods/no-chat-reports"
+          target="_blank"
+          >No Chat Reports</a
+        >, although only the latter two currently receive my active maintenance.
+      </p>
+      <p>
+        I have a particular passion for legacy modding. Most of my experience as
+        a Minecraft player was on modded 1.7.10, and this is the version I could
+        never entirely let go of. It was there that I started actively
+        experimenting with mod configs, and then more elaborate tools such as
+        <a
+          href="https://www.curseforge.com/minecraft/mc-mods/minetweaker3"
+          target="_blank"
+          >MineTweaker</a
+        >
+        and
+        <a
+          href="https://www.curseforge.com/minecraft/mc-mods/mob-properties"
+          target="_blank"
+          >Mob Properties</a
+        >, in an attempt to create truly unique modpack experience. When these
+        tools stopped being sufficient I turned my sights to modding, and as
+        such my first mod was coded. With only a few simple items to serve as
+        crafting ingredients - it wasn't much to look at; but such was the
+        beginning of my path as mod developer, and I still cast an occasional
+        longing sight in the direction of these simpler times. I do not play
+        Minecraft much any longer, but there are projects there to which I keep
+        coming back, including a
+        <a href="https://github.com/juanmuscaria/ForgeGradle" target="_blank"
+          >fork of ForgeGradle</a
+        >
+        and some backporting initiatives such as
+        <a
+          href="https://www.curseforge.com/minecraft/mc-mods/grimoire-api"
+          target="_blank"
+          >Grimoire API</a
+        >.
+      </p>
+      <p>
+        Also I run a small YouTube channel. In fact I did for a long time, but
+        its "real" beginning can be traced to the announcement of chat reporting
+        as part Minecraft's infamous snapshot
+        <a
+          target="_blank"
+          href="https://www.minecraft.net/en-us/article/minecraft-snapshot-22w24a"
+          >22w24a</a
+        >, when I have decided to speak to Minecraft community about its
+        countless flaws and concerns it gave rise to. Since then I've made quite
+        a few videos in an attempt to raise awareness, explain technical sides
+        of the system and prevent the spread of misinformation about it.
+        Presently I do not have clear directions on where to take the channel
+        from there, but rest assured I'll figure something out.
+      </p>
+      <p>
+        Regarding my other interests - programming is an easy-to-guess one. I
+        liked writing at one point, but my works enjoyed limited popularity
+        where I published them, and ultimately I could not foster the patience
+        required to keep doing it as a hobby with no clear payoffs. Perhaps I
+        will come back to that when I am older and financial security is less of
+        a concern.
+      </p>
+      <p>
+        Quite as expected I also play videogames, with Stellaris, Hollow Knight,
+        Hades, Darkest Dungeons and Vintage Story being some of my favorites.
+        Most recently I started playing Among Us, just to see what all the memes
+        were all about, and it actually turned out to be not too bad, especially
+        since it was my first multiplayer experience in a long time.
+      </p>
+
+      <h2 id="projects" class="clear">My projects</h2>
+      <div class="info-card-container">
+        {% include mod_info_card.html logo="/assets/icons/EL_logo.png"
+        name="Enigmatic Legacy&nbsp;&nbsp;" downloads="6,000,000+"
+        desc="Magic-themed mod with a lot of unique resources, tools, weapons
+        and accessories, both found in world and craftable by player's hand."
+        modrinth="https://modrinth.com/mod/enigmatic-legacy"
+        curse="https://www.curseforge.com/minecraft/mc-mods/enigmatic-legacy"
+        wiki="https://github.com/Aizistral-Studios/Enigmatic-Legacy/wiki"
+        repo="https://github.com/Aizistral-Studios/Enigmatic-Legacy" %} {%
+        include mod_info_card.html logo="/assets/icons/NCR_logo.png" name="No
+        Chat Reports&nbsp;&nbsp;" downloads="36,000,000+" desc="A mod that
+        prevents chat reports and protects user privacy by stripping
+        identifiable cryptographic signatures from chat messages."
+        modrinth="https://modrinth.com/mod/no-chat-reports"
+        curse="https://www.curseforge.com/minecraft/mc-mods/no-chat-reports"
+        wiki="https://github.com/Aizistral-Studios/No-Chat-Reports/wiki"
+        repo="https://github.com/Aizistral-Studios/No-Chat-Reports" %} {%
+        include mod_info_card.html logo="/assets/icons/FR_logo.png"
+        name="Forgotten Relics&nbsp;&nbsp;" downloads="33,000+" desc="A
+        Thaumcraft 4 addon for 1.7.10 version of Minecraft. Adds unique and
+        powerful relics, as well as new research mechanics to the game."
+        modrinth="https://modrinth.com/mod/forgotten-relics"
+        curse="https://www.curseforge.com/minecraft/mc-mods/forgotten-relics" %}
+        {% include framework_info_card.html logo="/assets/icons/forge.png"
+        logo_class="card-forge-logo" name="Forge Workspace&nbsp;&nbsp;"
+        desc="Gradle project template for mod development with Forge on 1.7.10.
+        Features custom example mod, ForgeGradle fork and a few adjustments that
+        are just nice to have out of the box."
+        docs="https://github.com/Aizistral-Studios/ForgeWorkspaceSetup/blob/1.7.10-standalone/README.md"
+        repo="https://github.com/Aizistral-Studios/ForgeWorkspaceSetup" %}
+      </div>
+      <p class="centered">
+        ...that is not all of course. You can see the rest at GitHub
+        organization I own:&nbsp; {% include inline_button.html
+        url="https://github.com/Aizistral-Studios/"
+        icon="/assets/icons/aizistudios.png" name="Aizistral Studios" %}
+      </p>
+      <h2 id="videos">My YouTube videos</h2>
+      <div class="centered-container">
+        <div class="youtube-thumbnail-container">
+          {% include youtube_thumbnail.html
+          link="https://www.youtube.com/watch?v=gH_q7ZuCJs0"
+          image="https://i.ytimg.com/vi/48H5nMQ_8Yg/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBnx63LpoGGgU-IWHJUyXQkdHG54A"
+          duration="6:42" title="Chat Reporting in Minecraft 1.19.3: The End
+          of..." views="20K+" date="January 19, 2023" %} {% include
+          youtube_thumbnail.html
+          link="https://www.youtube.com/watch?v=gH_q7ZuCJs0"
+          image="https://i.ytimg.com/vi/gH_q7ZuCJs0/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&amp;rs=AOn4CLCCw6_Ws7sZV0DlSXHO6ADIyRsVwg"
+          duration="6:42" title="Chat Reporting in Minecraft 1.19.2: Gaslight
+          Strikes Back" views="50K+" date="August 11, 2022" %} {% include
+          youtube_thumbnail.html
+          link="https://www.youtube.com/watch?v=DobmW1ZUcbQ"
+          image="https://i.ytimg.com/vi/DobmW1ZUcbQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDChA_uZoYrauKkjZpGhXQdQSgo7A"
+          duration="48:08" title="Chat Reporting in Minecraft 1.19.2: Is
+          Everything Fixed?" views="30K+" date="August 7, 2022" %} {% include
+          youtube_thumbnail.html
+          link="https://www.youtube.com/watch?v=0X_SlIOLliQ"
+          image="https://i.ytimg.com/vi/0X_SlIOLliQ/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBKmAMyMy1jzkLtkrcXIsSoXWfU7w"
+          duration="23:37" title="Minecraft 1.19.84: Is This War?" views="150K+"
+          date="July 6, 2022" %}
+        </div>
+      </div>
+      <p class="centered">
+        ...check out my YouTube channel for more:&nbsp; {% include
+        inline_button.html url="https://www.youtube.com/c/Aizistral/"
+        icon="/assets/icons/youtube.png" name="Aizistral" %}
+      </p>
+      <h2 id="publications" class="clear">My publications</h2>
+      <div class="publication-card-container">
+        {% for publication in site.publications reversed %}
+        <a
+          href="{% if publication.redirect %}{{ publication.redirect }}{% else %}{{ publication.url }}{% endif %}"
+          target="{% if publication.redirect %}_blank{% else %}_self{% endif %}"
+          class="publication-card"
+        >
+          <div
+            class="publication-card-content {% if publication.redirect %}publication-card-content-partial{% endif %}"
+          >
+            <h3 class="publication-card-title publication-info-row">
+              {{ publication.title }}
+            </h3>
+            <div class="publication-card-main-area">
+              <div class="publication-info-row">
+                <p class="publication-card-text">
+                  {% include inline_icon.html svg="/assets/icons/calendar3.svg"
+                  %} <strong class="publication-card-text">Date:</strong>
+                </p>
+                <p>
+                  <span class="publication-card-text"
+                    >{{ publication.date | date: "%d.%m.%Y" }}</span
+                  >
+                </p>
+              </div>
+              <div class="publication-info-row">
+                <p class="publication-card-text">
+                  {% include inline_icon.html
+                  svg="/assets/icons/people-fill.svg" %}
+                  <strong class="publication-card-text">Collaborators:</strong>
+                </p>
+                <p class="publication-card-text">
+                  {%- assign collaborators = publication.collaborators | split:
+                  ", " -%} {%- assign amount = collaborators.size | minus: 1 -%}
+                  {%- assign range = (0..amount) -%} {%- for i in range -%} {%
+                  if collaborators[i] != 'N/A' %} {% include inline_icon.html
+                  svg="/assets/icons/discord.svg"%}&nbsp; {% endif %}
+                  <span class="publication-card-text">
+                    {% if collaborators[i] != 'N/A' %}{{ collaborators[i] }} {%-
+                    else -%}<em>N/A</em>{%- endif -%}
+                  </span>
+                  {% if i < amount %}
+                  <span class="publication-card-text">,<br /></span>
+                  {% endif %} {%- endfor -%}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {% if publication.redirect %}
+          <div class="publication-card-sidelink">
+            <svg
+              class="publication-card-platform-icon block"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+            >
+              <use href="/assets/icons/github.svg#main"></use>
+            </svg>
+            <svg
+              class="publication-card-external-icon block"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <use href="/assets/icons/box-arrow-up-right.svg#main"></use>
+            </svg>
+          </div>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+      <p class="centered">
+        ...check out my GitHub gists for more:&nbsp; {% include
+        inline_button.html url="https://gist.github.com/Aizistral"
+        icon="/assets/icons/github.png" name="Aizistral" %}
+      </p>
+      <h2 id="platforms">Where I dwell</h2>
+      <p>You can find me on following platforms:</p>
+      <div class="info-card-container">
+        {% include platform_button.html url="https://github.com/Aizistral"
+        svg="/assets/icons/github.svg" name="GitHub (Aizistral)" padding="2px"
+        %} {% include platform_button.html
+        url="https://modrinth.com/user/Aizistral"
+        png="/assets/icons/modrinth_black.png" name="Modrinth (Aizistral)" %} {%
+        include platform_button.html
+        url="https://www.curseforge.com/members/aizistral/projects"
+        svg="/assets/icons/curseforge.svg" name="CurseForge (Aizistral)"
+        larger_icon=true %} {% include platform_button.html
+        url="https://www.youtube.com/c/Aizistral"
+        svg="/assets/icons/youtube.svg" name="YouTube (Aizistral)" %} {% include
+        platform_button.html url="https://odysee.com/@aizistral:b"
+        svg="/assets/icons/odysee.svg" name="Odysee (Aizistral)" %} {% include
+        platform_button.html url="https://discord.gg/fuWK8ns"
+        svg="/assets/icons/discord.svg" name="Discord (Aizistral#1024)" %}
+      </div>
+      <h2 id="contact">Contact</h2>
+      <p>There's a two main ways to get in touch with me:</p>
+      <div class="contact-grid">
+        <div class="contact-grid-element">
+          <h5 class="contact-title">My Discord server:</h5>
+          <p class="contact-text">
+            {% include inline_button.html url="https://discord.gg/fuWK8ns"
+            icon="/assets/icons/EL_logo.png" name="The Architect's Domain" %}
+          </p>
+          <p class="contact-text contact-subtext">
+            ...for casual chatting and swift communication.
+          </p>
+        </div>
+        <div class="contact-grid-element">
+          <h5 class="contact-title">E-Mail:</h5>
+          <p class="contact-text">
+            {% include inline_button.html
+            url="mailto:&#x61;&#x64;&#x6d;&#x69;&#x6e;&#x40;&#x61;&#x69;&#x7a;&#x69;&#x73;&#x74;&#x72;&#x61;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"
+            svg="/assets/icons/envelope-fill.svg"
+            name="&#x61;&#x64;&#x6d;&#x69;&#x6e;&#x40;&#x61;&#x69;&#x7a;&#x69;&#x73;&#x74;&#x72;&#x61;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"
+            %}
+          </p>
+          <p class="contact-text contact-subtext">
+            ...for business inquiries and other important matters.
+          </p>
+        </div>
+      </div>
+      <h2 id="support">Support me</h2>
+      <p>
+        My public works are free, but if you would like to lend me your
+        financial support - I would be very grateful!<br />You can do so at
+        <strong>Buy Me a Coffee</strong>:&nbsp; {% include inline_button.html
+        url="https://www.buymeacoffee.com/aizistral"
+        icon="/assets/icons/bmc-logo.png" name="Aizistral" %}
+      </p>
+    </div>
+  </main>
 </body>
