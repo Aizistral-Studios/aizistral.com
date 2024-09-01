@@ -15,7 +15,7 @@ jobs:
             ${{ runner.os }}-gems-
 
       # Standard usage
-      - uses:  lemonarc/jekyll-action@1.0.0
+      - uses:  Aizistral-Studios/jekyll-action@2.0.0
 
       # Capture artifacts
       - name: upload
