@@ -1,196 +1,195 @@
 // --- MEDIA QUERIES AND WHATNOT --- //
 
 @media screen and (max-width: 1280px) {
-	main {
-		width: 90%;
-	}
+  main {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1080px) {
-	.header-button_text {
-		display: none;
-	}
+  .header-button_text {
+    display: none;
+  }
 
-	.header-button_icon {
-		margin-right: 0px;
-		transform: scale(1.25);
-	}
+  .header-button_icon {
+    margin-right: 0px;
+    transform: scale(1.25);
+  }
 
-	// .youtube-thumbnail-container {
-	// 	justify-content: center;
-	// }
+  // .youtube-thumbnail-container {
+  // 	justify-content: center;
+  // }
 }
 
 @media screen and (max-width: 920px) {
-	.jekyll-text {
-		margin-right: 30px;
-	}
+  .jekyll-text {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (max-width: 750px) {
-	nav {
-		flex-direction: column;
-		align-items: center;
-	}
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
-	.header-buttons {
-		margin-left: 3.5%;
-		border-top: var(--NO-CONTENT-BACKGROUND) solid 2px;
-	}
+  .header-buttons {
+    margin-left: 3.5%;
+    border-top: var(--NO-CONTENT-BACKGROUND) solid 2px;
+  }
 
-	.header-button_icon {
-		min-height: 3rem;
-	}
+  .header-button_icon {
+    min-height: 3rem;
+  }
 }
 
 @media screen and (max-width: 560px) {
-	.info-card-title {
-		white-space: initial;
-	}
+  .info-card-title {
+    white-space: initial;
+  }
 
-	.publication-card {
-		flex-direction: column;
-		min-width: 335px;
-	}
+  .publication-card {
+    flex-direction: column;
+    width: 335px;
+  }
 
-	.publication-card-title {
-		min-width: 0;
-	}
+  .publication-card-title {
+    min-width: 0;
+  }
 
-	.publication-card-content-partial {
-		padding-right: 0px;
-	}
+  .publication-card-content-partial {
+    padding-right: 0px;
+  }
 
-	.publication-card-sidelink {
-		padding-left: 0px;
-		padding-top: 20px;
-		margin-bottom: 20px;
-		border-left: none;
-		border-top: 1px solid var(--LIGHT-BORDER);
-		width: 100%;
-		flex-direction: row;
-	}
+  .publication-card-sidelink {
+    padding-left: 0px;
+    padding-top: 8px;
+    border-left: none;
+    border-top: 1px solid var(--LIGHT-BORDER);
+    width: 100%;
+    flex-direction: row;
+    margin-top: 10px;
+  }
 
-	.publication-card-title {
-		margin-top: 0.5em;
-		padding-bottom: 12px;
-	}
+  .publication-card-title {
+    padding-bottom: 8px;
+  }
 
-	.about-left-float {
-		float: none;
-		padding-right: 0;
-		margin-top: 16px;
-	}
+  .about-left-float {
+    float: none;
+    padding-right: 0;
+    margin-top: 16px;
+  }
 
-	.about-char-image {
-		margin-inline: auto;
-	}
+  .about-char-image {
+    margin-inline: auto;
+  }
 
-	.about-char-image-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+  .about-char-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-	.index-area {
-		padding-inline: 30px;
-		padding-block: 20px;
-	}
+  .index-area {
+    padding-inline: 30px;
+    padding-block: 20px;
+  }
 
-	.index-title {
-		margin-inline: -50px;
-		padding-inline: 50px;
-	}
+  .index-title {
+    margin-inline: -50px;
+    padding-inline: 50px;
+  }
 
-	.larger-text {
-		font-size: 1.1rem;
-	}
+  .larger-text {
+    font-size: 1.1rem;
+  }
 }
-
 
 // --- SPECIAL HACKS FOR ABYSMAL SCREEN SIZES --- //
 
 @media screen and (max-width: 400px) {
-	.error-page-content {
-		flex-direction: column-reverse;
-		gap: 10px;
-	}
+  .error-page-content {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
 
-	.publication-card {
-		min-width: 280px;
-		margin-inline: 0;
-	}
+  .publication-card {
+    width: 280px;
+    margin-inline: 0;
+  }
 
-	.publication-card-title {
-		padding-top: 10px;
-		padding-bottom: 8px;
-		font-size: 1.25rem;
-	}
+  .publication-card-title {
+    padding-bottom: 8px;
+    font-size: 1.25rem;
+  }
 
-	.publication-card-sidelink {
-		padding-top: 12px;
-		margin-bottom: 12px;
-	}
+  .publication-card-sidelink {
+    margin-top: 10px;
+    padding-top: 8px;
+  }
 
-	.publication-card-platform-icon {
-		height: 32px;
-		width: auto;
-	}
+  .publication-card-platform-icon {
+    height: 32px;
+    width: auto;
+  }
 
-	.publication-card-external-icon {
-		height: 20px;
-		width: auto;
-	}
+  .publication-card-external-icon {
+    height: 20px;
+    width: auto;
+  }
 
-	.publication-info-row {
-		margin-block: 0.2em;
-	}
+  .publication-info-row {
+    margin-block: 0.2em;
+  }
 
-	.publication-card-text, .publication-card-text .inline-icon {
-		font-size: 0.7rem;
-	}
+  .publication-card-text,
+  .publication-card-text .inline-icon {
+    font-size: 0.7rem;
+  }
 
-	h1 {
-		text-align: center;
-	}
+  h1 {
+    text-align: center;
+  }
 
-	.index-title {
-		background: none;
-		text-align: center;
-		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		font-weight: bold;
-		line-height: 1.2;
-		border-bottom: 1px solid var(--LIGHT-BORDER);
-		margin-inline: 0px;
-		padding-inline: 0px;
-		padding-block: 0px;
-		margin-top: 4px;
-		font-size: 3.3rem;
-	}
+  .index-title {
+    background: none;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    border-bottom: 1px solid var(--LIGHT-BORDER);
+    margin-inline: 0px;
+    padding-inline: 0px;
+    padding-block: 0px;
+    margin-top: 4px;
+    font-size: 3.3rem;
+  }
 
-	.index-title::before {
-		content: none;
-	}
+  .index-title::before {
+    content: none;
+  }
 
-	.index-subtitle, .index-subtitle .link-with-icon-text {
-		font-size: 2rem;
-	}
+  .index-subtitle,
+  .index-subtitle .link-with-icon-text {
+    font-size: 2rem;
+  }
 
-	.info-card-title {
-		font-size: 1.5rem;
-	}
+  .info-card-title {
+    font-size: 1.5rem;
+  }
 
-	.info-card-text {
-		margin-top: 0.5rem;
-		font-size: 0.85rem;
-	}
+  .info-card-text {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+  }
 
-	.info-card-grid {
-		margin-top: 8px;
-		margin-bottom: 12px;
-	}
+  .info-card-grid {
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
 
-	footer {
-		padding-inline: 20px;
-	}
+  footer {
+    padding-inline: 20px;
+  }
 }

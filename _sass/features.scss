@@ -284,19 +284,23 @@ a.info-card-text {
   color: var(--BRIGHT-TEXT);
 }
 
+.platform-container {
+  gap: 15px;
+}
+
 .platform-button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
   padding: 10px;
-  margin: 10px 3px;
   border: 1px solid var(--LIGHT-BORDER);
   border-radius: 6px;
   transition-duration: 0.25s;
   background-color: var(--CARD-BACKGROUND);
   box-shadow: var(--CARD-SHADOW-LIGHTER);
-  min-width: 19rem;
+  width: 19rem;
+  flex-grow: 1;
 }
 
 .platform-button:hover {
